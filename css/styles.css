@@ -8,8 +8,7 @@
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family:'Roboto', sans-serif, 'Raleway', sans-serif;
     color: var(--title-text-color);
 }
 ul {
@@ -17,11 +16,21 @@ ul {
     margin: 0;
     padding: 0;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .container-nav {
 display: flex;
 align-items: center;
 width: 1200px;
-padding: 15px;
+padding: 32px 15px 32px 15px;
 border: 1px solid #ECECEC
 }
 
@@ -39,6 +48,7 @@ border: 1px solid #ECECEC
 .contact-info {
     display: flex;
     margin-left: auto;
+    color: var(--primary-text-color);
 }
 .contact-info .item + .item {
     margin-left: 50px;
@@ -50,16 +60,12 @@ border: 1px solid #ECECEC
     text-decoration: none;
     color: inherit;
 }
-.logo span {
+.logo .span-logo {
     color: var(--accent-color);
 }
-.container-nav .logo {
-    margin-left: 215px;
-}
+
 .link{
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
@@ -77,10 +83,9 @@ border: 1px solid #ECECEC
     text-align: center;
     padding-bottom: 200px;
 }
-.order-service h1 {
+.order-service .order-header {
     margin-top: 0px;
     margin-bottom: 30px;
-    padding-top: 200px;
     color: var(--primary-white-color);
     font-size: 44px;
     font-weight: 900;
@@ -92,7 +97,7 @@ border: 1px solid #ECECEC
 .order-button {
     display: inline;
 }
-.order-service button {
+.order-service .order-button {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     padding: 10px 32px;
@@ -110,7 +115,6 @@ border: 1px solid #ECECEC
 .future-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 94px;
 }
 .future-list .item {
     width: 270px;
@@ -119,7 +123,10 @@ border: 1px solid #ECECEC
     padding-left: 15px;
     padding-right: 15px;
 }
-.paragraphs h3 {
+.paragraphs {
+    padding-bottom: 0px;
+}
+.paragraphs .paragraph-header {
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
@@ -127,7 +134,7 @@ border: 1px solid #ECECEC
     text-align: left;
     text-transform: uppercase;
 }
-.paragraphs p {
+.paragraphs .paragraph-content {
     color: var(--primary-text-color);
     font-size: 14px;
     font-weight: 400;
@@ -141,8 +148,8 @@ border: 1px solid #ECECEC
     line-height: 42px;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-top: 94px;
     margin-bottom: 50px;
+    margin-top: 0px;
 }
 .work-item {
     display: flex;
@@ -157,28 +164,31 @@ border: 1px solid #ECECEC
 .our-team {
     background-color: var(--primary-bg-color);
     height: 648;
+    padding-top: 0px;
 }
-.our-team h2 {
+.our-team .team-header {
     font-size: 36px;
     font-weight: 700;
     line-height: 42px;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-top: 94px;
     margin-bottom: 50px;
+    margin-top: 0px;
 }
-.our-team h3 {
+.our-team .members-header {
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
     letter-spacing: 0.03em;
+    margin: 0px 0px 10px 0px;
 }
-.our-team p {
+.our-team .position {
     color: var(--primary-text-color);
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0.03em;
+    margin: 0px;
 }
 .member-list {
     display: flex;
@@ -191,13 +201,17 @@ border: 1px solid #ECECEC
 .member-list .members:first-child {
     margin-left: 215px;
 }
+.member-cnt {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .contacs-footer {
     background: #2F303A;
     padding-left: 215px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.contacs-footer a{
+.footer-link{
     color: var(--primary-white-color);
     text-decoration: none;
     font-size: 14px;
@@ -208,6 +222,7 @@ border: 1px solid #ECECEC
 }
 .address-cnt {
     margin-top: 20px;
+    font-style: normal;
 }
 .opacity-class{
     opacity: 60%;
@@ -221,8 +236,6 @@ border: 1px solid #ECECEC
 .button-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
-
 }
 .button-list .button {
     margin-right: 8px;
@@ -246,44 +259,55 @@ border: 1px solid #ECECEC
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
+.buttons {
+    padding-bottom: 0px;
+}
 .main-info {
     width: 1170px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 50px;
 }
 .flex-container {
     display: flex;
     flex-wrap: wrap;
+    width: 1170px;
 }
 .flex-elements {
-    width: 370px;
+    width: calc((100% - 2 * 30px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid #EEEEEE
 }
 .flex-elements:nth-child(3n) {
     margin-right: 0px;
 }
-.flex-elements:nth-last-child(-n + 3) {
-    margin-bottom: 94px;
+.flex-image {
+    display: block;
+}
+.flex-text-cnt {
+    border: 1px solid #EEEEEE;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 24px 20px 24px;
 }
 
-.main-info h2{
+.main-info .info-header{
     font-size: 18px;
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 0.06em;
     text-align: left;
-    padding-left: 24px;
+    margin: 0px 0px 4px 0px;
 }
-.main-info p{
+.main-info .info-contant{
     color: var(--primary-text-color);
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.03em;
     text-align: left;
-    padding-left: 24px;
+    margin: 0px;
 }
 
 .card {
