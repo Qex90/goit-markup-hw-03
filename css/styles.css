@@ -16,6 +16,9 @@ ul {
     margin: 0;
     padding: 0;
 }
+h1,h2,h3,p {
+    margin: 0;
+}
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -25,15 +28,21 @@ ul {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    width: 1200px;
+}
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.page-header .container {
+    display: flex;
+    align-items: center;
 }
 .container-nav {
 display: flex;
 align-items: center;
-width: 1200px;
-padding: 32px 15px 32px 15px;
-border: 1px solid #ECECEC;
-margin-left: auto;
-margin-right: auto;
+
 }
 
 .site-nav {
@@ -80,13 +89,13 @@ margin-right: auto;
 .link:focus{
     color: var(--accent-color);
 }
-.order-service {
+.hero {
     background-color:#2F303A;
     text-align: center;
     padding-bottom: 200px;
     padding-top: 200px;
 }
-.order-service .order-header {
+.hero .order-header {
     margin-top: 0px;
     margin-bottom: 30px;
     color: var(--primary-white-color);
@@ -100,7 +109,7 @@ margin-right: auto;
 .order-button {
     display: inline;
 }
-.order-service .order-button {
+.hero .order-button {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     padding: 10px 32px;
@@ -121,23 +130,25 @@ margin-right: auto;
 }
 .future-list .item {
     width: 270px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
-.paragraphs {
-    padding-bottom: 0px;
+.future-list .item:not(:last-child) {
+    margin-right: 30px;
 }
-.paragraphs .paragraph-header {
+
+.feauters {
+    padding-top: 94px;
+}
+
+.feauters .paragraph-header {
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-align: left;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
-.paragraphs .paragraph-content {
+.feauters .paragraph-content {
     color: var(--primary-text-color);
     font-size: 14px;
     font-weight: 400;
@@ -162,14 +173,13 @@ margin-right: auto;
     margin-left: 30px;
 }
 .work-item .img-item:first-child {
-    margin-left: 215px;
+    margin-left: 0px;
 }
-.our-team {
+.team {
     background-color: var(--primary-bg-color);
-    height: 648;
     padding-top: 0px;
 }
-.our-team .team-header {
+.team .team-header {
     font-size: 36px;
     font-weight: 700;
     line-height: 42px;
@@ -179,14 +189,14 @@ margin-right: auto;
     margin-top: 0px;
     padding-top: 94px;
 }
-.our-team .members-header {
+.team .members-header {
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
     letter-spacing: 0.03em;
     margin: 0px 0px 10px 0px;
 }
-.our-team .position {
+.team .position {
     color: var(--primary-text-color);
     font-size: 16px;
     font-weight: 400;
@@ -196,14 +206,14 @@ margin-right: auto;
 }
 .member-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .member-list .members {
     margin-left: 30px;
     text-align: center;
 }
 .member-list .members:first-child {
-    margin-left: 215px;
+    margin-left: 0px;
 }
 .member-cnt {
     padding-top: 30px;
@@ -317,6 +327,5 @@ margin-right: auto;
 .card {
     border-radius: 4px;
     box-shadow: 0px 0px 0px rgb(0 0 0 / 20%);
-    margin-bottom: 94px;
     background-color: var(--primary-white-color);
 }
